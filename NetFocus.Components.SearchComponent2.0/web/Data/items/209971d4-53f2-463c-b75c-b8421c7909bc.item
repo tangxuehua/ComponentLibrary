@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<QueryItem id="209971d4-53f2-463c-b75c-b8421c7909bc" name="按顾客ID查询" kindId="a331a1fe-303d-4512-97bf-a0224d3cba76">
+  <ConnectionString>server=tangxuehua\netsdk;user id=sa;password=;initial catalog=northwind;</ConnectionString>
+  <Description>查询指定客户名称的所有订单</Description>
+  <Body>
+    <Select>
+      <Field OwnerTable="Customers" FullFieldName="c.region" FieldName="region" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.contactname" FieldName="contactname" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.customerid" FieldName="customerid" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Orders" FullFieldName="o.employeeid" FieldName="employeeid" DataType="Int32" AliasName="" ChineseName="" />
+      <Field OwnerTable="Orders" FullFieldName="o.freight" FieldName="freight" DataType="Decimal" AliasName="" ChineseName="" />
+      <Field OwnerTable="Orders" FullFieldName="o.shipvia" FieldName="shipvia" DataType="Int32" AliasName="" ChineseName="" />
+      <Field OwnerTable="Orders" FullFieldName="o.orderdate" FieldName="orderdate" DataType="DateTime" AliasName="" ChineseName="" />
+    </Select>
+    <Tables>
+      <Table Name="Customers" AliasName="c" ChineseName="" />
+      <Table Name="Orders" AliasName="o" ChineseName="" />
+    </Tables>
+    <Relations>
+      <Relation type="Inner Join">
+        <Table name="Customers" />
+        <Table name="Orders" />
+        <JoinField Field1="customerid" Field2="customerid" />
+      </Relation>
+    </Relations>
+    <AtomConditionListData>
+      <AtomCondition name="1" fieldFullname="o.customerid" fieldDataType="String" operator="LIKE" inputType="TextBox" fieldChineseName="顾客ID" initdata="" fieldvalue="" />
+    </AtomConditionListData>
+    <ComplicatedConditionListData />
+    <Conditions>
+      <Condition name="1" fieldFullname="o.customerid" fieldDataType="String" operator="LIKE" inputType="TextBox" fieldChineseName="顾客ID" initdata="" fieldvalue="Af" />
+    </Conditions>
+    <Order>
+      <Field fieldFullName="o.orderdate" sortType="Desc" />
+    </Order>
+  </Body>
+  <SQLString>
+    <SelectString>c.region,&lt;br&gt;c.contactname,&lt;br&gt;c.customerid,&lt;br&gt;o.employeeid,&lt;br&gt;o.freight,&lt;br&gt;o.shipvia,&lt;br&gt;o.orderdate</SelectString>
+    <FromString>Customers c Inner Join Orders o On c.customerid=o.customerid</FromString>
+    <ConditionString>o.customerid LIKE @o.customerid</ConditionString>
+    <OrderString>o.orderdate Desc</OrderString>
+  </SQLString>
+</QueryItem>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312"?>
+<QueryItems>
+  <QueryItem id="ad8e852e-8b72-4947-a3c6-577b9db6259d" name="按地区和国家查询" kindId="a331a1fe-303d-4512-97bf-a0224d3cba76" />
+  <QueryItem id="209971d4-53f2-463c-b75c-b8421c7909bc" name="按顾客ID查询" kindId="a331a1fe-303d-4512-97bf-a0224d3cba76" />
+  <QueryItem id="00255a13-f58c-452b-b802-770908dccf4d" name="查询所有顾客" kindId="fee476b9-50f1-448d-896c-19fc2886ef02" />
+</QueryItems>

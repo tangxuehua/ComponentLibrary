@@ -1,0 +1,151 @@
+
+namespace NetFocus.Components.CommandBar
+{
+	using System;
+	using System.Drawing;
+	using System.Collections;
+	using System.ComponentModel;
+	using System.Windows.Forms;
+	
+	public class CommandBarItem : Component
+	{
+		public event PropertyChangedEventHandler PropertyChanged;
+		public event EventHandler Select;
+		
+		private Image image = null;
+		private string text = null;
+		private bool isEnabled = true;
+		private bool isVisible = true;
+		private object tag;
+
+		private CommandBarItem()
+		{
+		}
+
+		public CommandBarItem(string text)
+		{
+			this.text = text;
+		}
+
+		public CommandBarItem(Image image)
+		{
+			this.image = image;
+		}
+
+		public CommandBarItem(Image image, string text)
+		{
+			this.text = text;
+			this.image = image;
+		}
+		
+		
+		internal void NotifySelect(EventArgs e)
+		{
+			OnSelect(e);
+		}
+		
+		protected virtual void OnSelect(EventArgs e)
+		{
+			if (Select != null) {
+				Select(this, e);
+			}
+		}
+		
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing)
+			{
+				this.image = null;
+				this.text = null;
+			}
+
+			base.Dispose(disposing);
+		}
+
+		public virtual object Tag
+		{
+		    set 
+		    { 
+		    	this.tag = value; 
+		    }
+		    
+		    get 
+		    { 
+		    	return this.tag; 
+		    }
+		}
+
+		public virtual bool IsVisible
+		{
+			set
+			{ 
+				if (value != this.isVisible)
+				{
+					this.isVisible = value; 
+					this.OnPropertyChanged(new PropertyChangedEventArgs("IsVisible")); 
+				}
+			}
+
+			get 
+			{ 
+				return this.isVisible; 
+			}
+		}
+
+		public virtual bool IsEnabled
+		{
+			set
+			{ 
+				if (this.isEnabled != value)
+				{ 
+				  this.isEnabled = value; 
+				  this.OnPropertyChanged(new PropertyChangedEventArgs("IsEnabled")); 
+				}
+			}
+	
+			get 
+			{ 
+				return this.isEnabled; 
+			}
+		}
+
+		public Image Image
+		{
+			set
+			{ 
+				if (value != this.image)
+				{
+					this.image = value; 
+					this.OnPropertyChanged(new PropertyChangedEventArgs("Image")); 
+				}
+			}
+		
+			get 
+			{ 
+				return this.image; 
+			}
+		}
+	
+		public string Text
+		{
+			set
+			{ 
+				if (value != this.text)
+				{ 
+					this.text = value; 
+					this.OnPropertyChanged(new PropertyChangedEventArgs("Text"));
+				}
+			}
+
+			get { return this.text; }
+		}
+
+		protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
+		{
+			if (this.PropertyChanged != null)
+			{
+				this.PropertyChanged(this, e);
+			}
+		}
+	}
+}

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F14FEF1-0575-470C-992A-46E60D6D75EE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>NetFocus.Components.AddIns</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddInCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddInTreeSingleton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\CodonTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\ConditionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\PathAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\XmlMemberArraryAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\XmlMemberAttributeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codons\AbstractCodon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codons\CodonBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codons\CodonFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codons\ICodon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\AbstractCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\CompareCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ComplexConditions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ConditionBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ConditionBuilderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ConditionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ConditionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ICondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefaultAddInTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefaultAddInTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\AddInInitializeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\AddInLoadException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\AddInSignatureException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\AddInTreeFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\CodonNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\ConditionNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\ConditionWithoutRequiredAttributesException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\DuplicateCodonException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\DuplicateConditionException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\TreePathNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\TypeNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAddInTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAddInTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InternalFileService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

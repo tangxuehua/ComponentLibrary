@@ -1,0 +1,310 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E384D024-E322-49B4-88B0-87952EBEC2E5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>NetFocus.Components.SearchComponent</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NetFocus.Components.SearchComponent</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\AtomCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\AtomConditionDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\ComplicatedConditionDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\ConditionNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\QueryItemTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\QueryKindTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\RelationFieldDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\SelectedSortFieldDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\SelectedTableDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\TableFieldDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\CustomizeTable\TableRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\ItemDesign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\ItemKindManage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\ItemManage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\ItemSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\QueryItemManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\QueryKindManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\Script.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\showResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\Style.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\TemplatedWebControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\TreeView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SearchComponent\WebSearchComponent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\BaseChildNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\BaseChildNodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\BasePostBackControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\BaseRichControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\CssCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\CssCollectionConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\CssWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\CssCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\DesignUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\ItemCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\MultiPageDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\ObjectImageUrlEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\ObjectUrlEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\TabItemCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Design\TabStripDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\FilterControlBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\HtmlInlineWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\LevelCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\MultiPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\PageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\PageViewCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\ResDescriptionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Tab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\TabItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\TabItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\TabSeparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\TabStrip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebControl\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="SearchComponent\CustomizeTable\RelationFieldDataTable.resx">
+      <DependentUpon>RelationFieldDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebControl\Resources\Resources.Design.resources" />
+    <EmbeddedResource Include="WebControl\Resources\Resources.resources" />
+    <Content Include="WebControl\Runtime\images\folder.gif" />
+    <Content Include="WebControl\Runtime\images\folderopen.gif" />
+    <Content Include="WebControl\Runtime\images\html.gif" />
+    <Content Include="WebControl\Runtime\images\root.gif" />
+    <Content Include="WebControl\Runtime\MultiPage.htc" />
+    <Content Include="WebControl\Runtime\TabStrip.htc" />
+    <Content Include="WebControl\Runtime\treeimages\f.gif" />
+    <Content Include="WebControl\Runtime\treeimages\fminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\fplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\i.gif" />
+    <Content Include="WebControl\Runtime\treeimages\L.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Lminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Lplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\minus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\plus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\r.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Rminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Rplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\F.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Fminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Fplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\I.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\L.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Lminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Lplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\minus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\plus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\r.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Rminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Rplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\T.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Tminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\Tplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\rtl\white.gif" />
+    <Content Include="WebControl\Runtime\treeimages\T.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Tminus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\Tplus.gif" />
+    <Content Include="WebControl\Runtime\treeimages\white.gif" />
+    <Content Include="WebControl\Runtime\webservice.htc" />
+    <Content Include="WebControl\Runtime\webserviced.htc" />
+    <Content Include="WebControl\state_city.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,12 @@
+<TREENODES>
+      <treenode Text="Michigan">
+         <treenode Text="Detroit" />
+         <treenode Text="Farmington" />
+         <treenode Text="Southfield" />
+      </treenode>
+      <treenode Text="Washington" >
+         <treenode Text="Bellevue" />
+         <treenode Text="Redmond" />
+         <treenode Text="Woodinville" />
+      </treenode>
+</TREENODES>

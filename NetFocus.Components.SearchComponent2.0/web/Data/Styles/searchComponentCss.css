@@ -1,0 +1,26 @@
+
+A:link
+{
+  color:Navy;
+  text-decoration: none;
+}
+A:Visited
+{
+  color:Navy;
+  text-decoration: none;
+}
+A:hover
+{
+  color: red;
+  text-decoration: underline;
+}
+BODY 
+{
+	FONT-SIZE: 12px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+td
+{
+	FONT-SIZE: 12px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+

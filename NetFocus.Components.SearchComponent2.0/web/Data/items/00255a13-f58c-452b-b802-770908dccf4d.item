@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gb2312"?>
+<QueryItem id="00255a13-f58c-452b-b802-770908dccf4d" name="查询所有顾客" kindId="fee476b9-50f1-448d-896c-19fc2886ef02">
+  <ConnectionString>server=tangxuehua;database=northwind;uid=sa;pwd=;</ConnectionString>
+  <Description>
+  </Description>
+  <Body>
+    <Select>
+      <Field OwnerTable="Customers" FullFieldName="c.contacttitle" FieldName="contacttitle" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.address" FieldName="address" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.region" FieldName="region" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.contactname" FieldName="contactname" DataType="String" AliasName="" ChineseName="" />
+      <Field OwnerTable="Customers" FullFieldName="c.fax" FieldName="fax" DataType="String" AliasName="" ChineseName="" />
+    </Select>
+    <Tables>
+      <Table Name="Customers" AliasName="c" ChineseName="" />
+    </Tables>
+    <Relations>
+      <Table TableName="Customers" AliasName="c" ChineseName="" />
+    </Relations>
+    <AtomConditionListData>
+      <AtomCondition name="1" fieldFullname="c.country" fieldDataType="String" operator="LIKE" inputType="TextBox" fieldChineseName="顾客所属国家" initdata="China" fieldvalue="" />
+    </AtomConditionListData>
+    <ComplicatedConditionListData />
+    <Conditions>
+      <Condition name="1" fieldFullname="c.country" fieldDataType="String" operator="LIKE" inputType="TextBox" fieldChineseName="顾客所属国家" initdata="China" fieldvalue="China" />
+    </Conditions>
+    <Order>
+      <Field fieldFullName="c.region" sortType="Desc" />
+    </Order>
+  </Body>
+  <SQLString>
+    <SelectString>c.contacttitle,&lt;br&gt;c.address,&lt;br&gt;c.region,&lt;br&gt;c.contactname,&lt;br&gt;c.fax</SelectString>
+    <FromString>Customers c</FromString>
+    <ConditionString>c.country LIKE @c.country</ConditionString>
+    <OrderString>c.region Desc</OrderString>
+  </SQLString>
+</QueryItem>
